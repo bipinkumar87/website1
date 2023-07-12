@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+}
+body{
+    width: 100%;
+}
+.logo{
+    width: 150px;
+    height: 50px;
+    
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    
+    box-shadow: 0 5px 15px rgba(0, 0,0, 0.06);
+    z-index: 999;
+    position:sticky;
+    top: 0;
+    left: 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+}
+#mobile1{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(108, 13, 56);
+    border: 1px solid blue;
+
+}
+
+#mobile li a{
+    background-color: rgb(37, 93, 247);
+    color: rgb(251, 248, 248);
+    padding: 8px 16px;
+    border-radius: 2px;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: #4a3af8;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: #f5f8f6;
+    position: absolute;
+    bottom: -4px;
+    font-size: 40px;
+    left: 20px;
+
+}
+#mobile li a:hover{
+    color: #f8f8fb;
+}
+#fpage{
+    background-image: url(img/b1.jpg);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 0px right 0 ;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+#fpage h1{
+    background-color: transparent;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    color: #046db3;
+    
+
+}
+#fpage img{
+    display: flex;
+    float: left;
+    border-radius: 15px;
+    margin-left: 1060px;
+    margin-top: 190px;
+    
+
+}
+#fpage h2{
+    background-color: transparent;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: #0696f6;
+    margin-bottom: 10px;
+    font-weight: 600;
+    
+
+
+
+}
+#fpage p{
+    background-color: transparent;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+
+
+}
+#fpage button{
+    background-color: transparent;
+    margin: 20px;
+    padding: 5px 90px;
+    color: #0696f6;
+    font-weight: 400;
+    border-radius: 5px;
+    border:2px solid blue;
+
+
+}
+#product1{
+    text-align: center;
+    background-color: white;
+}
+#product1 .pro{
+    width: 20%;
+    min-width: 450px;
+    padding-bottom: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    box-shadow: 20px 30px 25px rgba(0, 0,0, 0.02);
+    margin: 15px 0.2px;
+    transition: 0.2s ease;
+}
+#product1 .pro img{
+    width: 100%;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+#product1 .pro-container h5{
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+#product1 .pro-container p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    align-items: flex-start;
+    padding-left: 4px;
+    margin-top: 20px;
+
+}
+#product1 h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0696f6;
+    font-weight: 600;
+    font-size: 60px;
+    margin-top: 40px;
+
+}
+#product1 .pro-container li{
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    align-items: flex-start;
+}
+#product1 .pro-container button{
+    
+    background-color: transparent;
+    margin: 20px;
+    padding: 30px 160px;
+    color: #f6f7f8;
+    font-weight: 400;
+    border-radius: 5px;
+    background-color: #4a3af8;
+
+}
